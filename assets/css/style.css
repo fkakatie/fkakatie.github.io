@@ -23,6 +23,24 @@ body, input, button, select, textarea {
 
 /*
 ==============================
+SCROLLBAR
+==============================
+*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    /* background: none;  */
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #690; 
+}
+
+/*
+==============================
 HEADER
 ==============================
 */
@@ -30,12 +48,12 @@ HEADER
 header {
     background: #690;
     color: #fff;
-    height: 300px;
+    height: calc(100vh - 48px);
     /* margin-bottom: 0.5em; */
 }
 
 header .container {
-    height: 300px;
+    height: calc(100vh - 48px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,6 +82,7 @@ NAV BAR
 
 .navbar {
     background: #444;
+    max-height: 48px;
 }
 
 .stickyNav {
@@ -115,10 +134,6 @@ NAV BAR
     max-width: 100%;
 }
 
-.social {
-    flex: 0.5;
-}
-
 /*
 ==============================
 SECTION
@@ -127,7 +142,7 @@ SECTION
 
 section {
     background-color: #ccc;
-    height: 800px;
+    height: 1200px;
 }
 
 /*
