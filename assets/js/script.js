@@ -1,32 +1,23 @@
 $(document).ready(function() {
 
-    console.log('javascript file linked.');
-
+    // grab topnav coordinates
     var topnav = $('.navbar');
     var navCoords = topnav.offset();
 
     function stickyNav() {
-
-        console.log('stickyNav running');
-
-        console.log(navCoords.top);
-        console.log(window.scrollY);
-
+        // if window y position is greater than or equal to the navbar y position...
         if (window.scrollY >= navCoords.top) {
-
+            // make the navbar stick to the top of the page
             $('#wrapper').css('padding-top', '48px');
-
             $('.navbar').addClass('stickyNav');
-
         } else {
-
+            // remove the navbar's stickiness
             $('#wrapper').css('padding-top', '0px');
-
             $('.navbar').removeClass('stickyNav');
-
         }
-      }
+    }
 
-      $(window).on('scroll', stickyNav);
+    // check if the sticky nav is needed on every scroll
+    $(window).on('scroll', stickyNav);
 
 });
