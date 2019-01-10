@@ -4,6 +4,14 @@ $(document).ready(function() {
     var topnav = $('.navbar');
     var navCoords = topnav.offset();
 
+    function resetCoords() {
+        topnav = $('.navbar');
+        navCoords = topnav.offset();
+    }
+
+    // reset topnav coordinates on all page resizes
+    $(window).on('resize', resetCoords);
+
     function stickyNav() {
         // if window y position is greater than or equal to the navbar y position...
         if (window.scrollY >= navCoords.top) {
@@ -19,5 +27,7 @@ $(document).ready(function() {
 
     // check if the sticky nav is needed on every scroll
     $(window).on('scroll', stickyNav);
+
+    
 
 });
