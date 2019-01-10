@@ -28,6 +28,4 @@ $(document).ready(function() {
     // check if the sticky nav is needed on every scroll
     $(window).on('scroll', stickyNav);
 
-    
-
 });
