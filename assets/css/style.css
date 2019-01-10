@@ -30,10 +30,6 @@ SCROLLBAR
 ::-webkit-scrollbar {
     width: 6px;
 }
-  
-::-webkit-scrollbar-track {
-    /* background: none;  */
-}
    
 ::-webkit-scrollbar-thumb {
     background: #690; 
@@ -48,12 +44,17 @@ HEADER
 header {
     background: #690;
     color: #fff;
+}
+
+.heroFull {
     height: calc(100vh - 48px);
-    /* margin-bottom: 0.5em; */
+}
+
+.heroHalf {
+    height: calc(50vh - 48px);
 }
 
 header .container {
-    height: calc(100vh - 48px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,6 +73,7 @@ header a {
 
 header p {
     opacity: 0.6;
+    text-align: center;
 }
 
 /*
@@ -83,6 +85,7 @@ NAV BAR
 .navbar {
     background: #444;
     max-height: 48px;
+    font-family: 'Space Mono', monospace;
 }
 
 .stickyNav {
@@ -100,7 +103,7 @@ NAV BAR
 }
 
 .navbar nav li {
-    flex: 1;
+    flex-grow: 1;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -128,6 +131,10 @@ NAV BAR
     font-weight: 700;
     background: #333;
     color: #690;
+}
+
+.social {
+    flex-grow: 1;
 }
 
 .stickyNav .logo {
