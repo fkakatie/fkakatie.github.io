@@ -212,6 +212,7 @@ BIO
     font-family: 'PT Mono', monospace;
     text-transform: lowercase;
     letter-spacing: -0.05em;
+    word-break: break-word;
 }
 
 /*
@@ -292,14 +293,14 @@ PORTFOLIO
     filter: grayscale(0);
 }
 
-.portfolio .slant {
+/* .portfolio .slant {
     position: absolute;
     width: 0;
     height: 0;
     bottom: 180px;
     border-bottom: 32px solid #690;
     border-right: 346px solid transparent;
-}
+} */
 
 .portfolio .portfolioDesc {
     position: absolute;
@@ -356,6 +357,46 @@ CONTACT
 ==============================
 */
 
+.contact label p {
+    margin-bottom: 0.5em;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.contact .btnContainer {
+    text-align: center;
+    padding: 16px 32px;
+}
+
+.contact .btnContainer .btn {
+    text-transform: lowercase;
+    padding: 8px 16px;
+    border-radius: 24px;
+    transition: 0.5s all;
+}
+
+.contact .btnContainer .btn:hover {
+    background: #ccc;
+    border: 2px solid #ccc;
+    color: #fff;
+}
+
+.contact .btnContainer .btnPrimary {
+    background: #690;
+    color: #fff;
+    border: 2px solid #690;
+}
+
+.contact .btnContainer .btnSecondary {
+    background: #fff;
+    color: #690;
+    border: 2px solid #690;
+}
+
 /*
 ==============================
 FOOTER
@@ -396,7 +437,7 @@ footer {
 
 .footer > .container {
     display: grid;
-    grid-template-columns: 25% 1fr 25%;
+    grid-template-columns: 1fr 188px;
     grid-template: 2;
     grid-gap: 0 16px;
 }

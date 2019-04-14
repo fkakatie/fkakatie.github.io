@@ -1,0 +1,13 @@
+@media screen and (max-width: 1121px) {
+ 
+    /*
+    ==============================
+    PORTFOLIO
+    ==============================
+    */
+
+    .portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

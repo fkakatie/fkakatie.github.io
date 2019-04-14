@@ -1,0 +1,13 @@
+@media screen and (max-width: 730px) {
+ 
+    /*
+    ==============================
+    BIO
+    ==============================
+    */
+
+    .bio {
+        grid-template-columns: 1fr;
+    }
+ 
+}
