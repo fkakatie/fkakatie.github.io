@@ -1,4 +1,4 @@
-# Katie's Portfolio #
+# Katie's Portfolio
 
 Take a look at my recent coding projects, get to know me, or send me a message on my personal portfolio! :computer:
 
@@ -7,15 +7,15 @@ Take a look at my recent coding projects, get to know me, or send me a message o
 1. **[Visit my portfolio](https://fkakatie.github.io)**.
     - Learn a little bit about me.
 
-2. **[View my recent projects](https://fkakatie.github.io/portfolio)**.
+2. **[View my recent projects](https://fkakatie.github.io/portfolio.html)**.
     - Click on any project title to be taken to the live project. 
 
-3. **[Send me a message](https://fkakatie.github.io/contact)**.
+3. **[Send me a message](https://fkakatie.github.io/contact.html)**.
     - Contact me with any questions, comments, or really good jokes.
 
 ## Where users can get help with this project ##
 
-If you have any questions about my portfolio, [send me a message](https://fkakatie.github.io/contact).
+If you have any questions about my portfolio, [send me a message](https://fkakatie.github.io/contact.html).
 
 ## Who maintains this project ## 
 
